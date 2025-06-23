@@ -1,0 +1,104 @@
+{
+	"logo": {
+		"type": "kitty",
+			"source": "~/.config/fastfetch/logo/archlinuxlogo.png",
+		"height": 22,
+		"padding": {"left": 1, "right": 1},
+		},
+
+	"modules": [
+		{
+			"type": "title",
+			"key": "👤 USER",
+			"keyColor": "#0000ff",
+		},
+		{
+			"type": "custom",
+			"format": "•☽────────────────✧˖°˖☆˖°˖✧────────────────☾•"
+		},
+		{
+			"type": "kernel",
+			"key": "🐧 Kernel",
+			"keyColor": "#ff0000"
+		},
+		{
+			"type": "os",
+			"key": "⚙️ OS",
+			"keyColor": "#FF9800"
+		},
+		{
+			"type": "host",
+			"key": "💻 Host",
+			"keyColor": "#fff200",
+			"format": "{2}",
+		},
+		{
+			"type": "uptime",
+			"key": "⏰ Uptime",
+			"keyColor": "#36ff00"
+		},
+		{
+			"type": "packages",
+			"key": "📦 Packages",
+			"keyColor": "#00ffaa"
+		},
+		{
+			"type": "shell",
+			"key": "🐚 Shell",
+			"keyColor": "#00ffe0"
+		},
+		{
+			"type": "wm",
+			"key": "🪟 WM",
+			"keyColor": "#00eeff",
+			"format": "{1} {version}"
+		},
+		{
+			"type": "terminal",
+			"key": "</> Terminal",
+			"keyColor": "#0097ff"
+		},
+		{
+			"type": "cpu",
+			"key": "🧠 CPU",
+			"keyColor": "#0053ff",
+			"format": "{1}"
+		},
+		{
+			"type": "gpu",
+			"key": "🎮 GPU",
+			"keyColor": "#2100ff",
+			"format": "{1} {2} @ {12}"
+		},
+		{
+			"type": "memory",
+			"key": "🔄 RAM",
+			"keyColor": "#6f00ff",
+		},
+		{
+			"type": "swap",
+			"key": "🔁 Swap Memory",
+			"keyColor": "#ad00ff"
+		},
+		{
+			"type": "disk",
+			"key": "💾 SSD",
+			"keyColor": "#d900ff"
+		},
+		{
+			"type": "battery",
+			"key": "🔋 Battery",
+			"keyColor": "#ff00f0"
+		},
+		{
+			"type": "locale",
+			"key": "🔄 Locale",
+			"keyColor": "#ff00c4"
+		},
+		{
+			"type": "custom",
+			"format": "•☽────────────────✧˖°˖☆˖°˖✧────────────────☾•"
+		},
+		"colors",
+	]
+}
