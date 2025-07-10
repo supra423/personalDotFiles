@@ -11,6 +11,7 @@
 			"type": "title",
 			"key": "👤 USER",
 			"keyColor": "#0000ff",
+			"format": "{1}",
 		},
 		{
 			"type": "custom",
