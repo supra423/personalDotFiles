@@ -1,7 +1,7 @@
 {
 	"logo": {
 		"type": "kitty",
-			"source": "~/.config/fastfetch/logo/archlinuxlogo.png",
+			"source": "~/.config/fastfetch/logo/yoru-edited.jpg",
 		"height": 22,
 		"padding": {"left": 1, "right": 1},
 		},

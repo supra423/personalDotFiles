@@ -5,7 +5,7 @@
 }
 
 window#waybar {
-	background-color: rgba(50, 50, 50, 0.5);
+	background-color: rgba(0, 0, 0, 0);
 	/* border-bottom: 3px solid rgba(100, 114, 125, 0.3); */
 	color: #ffffff;
 	transition-property: background-color;
@@ -55,6 +55,27 @@ button:hover {
 }
 
 #pulseaudio:hover {
+	background-color: rgba(145, 145, 145, 0.4);
+	border-radius: 20px;
+}
+
+#temperature:hover {
+	background-color: rgba(145, 145, 145, 0.4);
+	border-radius: 20px;
+}
+
+#power-profiles-daemon:hover {
+	background-color: rgba(145, 145, 145, 0.4);
+	border-radius: 20px;
+}
+
+#network:hover {
+	background-color: rgba(145, 145, 145, 0.4);
+	border-radius: 20px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
+}
+
+#battery:hover {
 	background-color: rgba(145, 145, 145, 0.4);
 	border-radius: 20px;
 }
@@ -118,6 +139,7 @@ button:hover {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #battery {
@@ -132,6 +154,7 @@ button:hover {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #battery.charging,
@@ -146,6 +169,7 @@ button:hover {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 @keyframes blink {
@@ -168,6 +192,7 @@ button:hover {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #power-profiles-daemon {
@@ -176,6 +201,7 @@ button:hover {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #power-profiles-daemon.performance {
@@ -243,6 +269,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #network.disconnected {
@@ -255,6 +282,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #pulseaudio {
@@ -268,6 +296,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #pulseaudio.muted {
@@ -278,6 +307,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #wireplumber {
@@ -303,6 +333,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #custom-media.custom-spotify {
@@ -343,6 +374,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #temperature.critical {
@@ -364,6 +396,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #tray>.passive {
@@ -372,6 +405,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #tray>.needs-attention {
@@ -381,6 +415,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
+	border: 3px solid rgba(245, 45, 45, 0.4);
 }
 
 #idle_inhibitor {
