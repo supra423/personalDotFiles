@@ -1,6 +1,6 @@
 return {
 	{
-		"folke/tokyonight.nvim",
+		"scottmckendry/cyberdream.nvim",
 		opts = {
 			transparent = true,
 			styles = {
