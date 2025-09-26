@@ -115,6 +115,12 @@ vim.keymap.set("n", "<A-n>", function()
 	vim.wo.number = true
 end, { desc = "Toggle relative line numbers" })
 
+vim.keymap.set({ "n", "x" }, "<leader>d", '"_d', { noremap = true })
+
+vim.keymap.set("n", "<S-t>", function()
+	vim.cmd("terminal")
+end, { noremap = true, silent = true })
+
 vim.o.wrap = false -- Don't wrap lines
 vim.o.scrolloff = 8 -- Optional: add context padding
 vim.o.sidescroll = 1 -- Scroll sideways by 1 character
@@ -928,11 +934,11 @@ require("lazy").setup({
 		--
 		-- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
 		-- tokyonight
-		"folke/tokyonight.nvim",
+		"scottmckendry/cyberdream.nvim",
 		priority = 1000, -- Make sure to load this before all the other start plugins.
 		config = function()
 			---@diagnostic disable-next-line: missing-fields
-			require("tokyonight").setup({
+			require("cyberdream").setup({
 				styles = {
 					comments = { italic = false }, -- Disable italics in comments
 				},
@@ -943,7 +949,7 @@ require("lazy").setup({
 			-- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
 			vim.opt.termguicolors = true
 			vim.cmd.colorscheme("cyberdream")
-			vim.cmd([[highlight Visual guibg=#0055aa guifg=#ffffff]])
+			vim.cmd([[highlight Visual guibg=#00ffaa guifg=#000000]])
 			vim.cmd([[highlight Normal guibg=NONE ctermbg=NONE]])
 			vim.cmd([[highlight NormalNC guibg=NONE ctermbg=NONE]])
 			vim.cmd([[highlight NormalFloat guibg=NONE ctermbg=NONE]])

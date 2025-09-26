@@ -89,19 +89,20 @@ return {
 				-- },
 			}
 			-- dap.configurations.c = {
-			--   {
-			--     name = 'Launch file',
-			--     type = 'gdb',
-			--     request = 'launch',
-			--     program = function()
-			--       return vim.fn.input('Path to executable: ', vim.fn.getcwd() .. '/', 'file')
-			--     end,
-			--     cwd = '${workspaceFolder}',
-			--     stopOnEntry = false,
-			--   },
+			-- 	{
+			-- 		name = "Launch file",
+			-- 		type = "gdb",
+			-- 		request = "launch",
+			-- 		program = function()
+			-- 			return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
+			-- 		end,
+			-- 		cwd = "${workspaceFolder}",
+			-- 		stopOnEntry = false,
+			-- 	},
 			-- }
-			-- dap.configurations.cpp = dap.configurations.c
-			--
+			dap.configurations.cpp = dap.configurations.rust
+			-- --
+			dap.configurations.c = dap.configurations.rust
 			dapui.setup()
 
 			dap.listeners.after.event_initialized["dapui_config"] = function()

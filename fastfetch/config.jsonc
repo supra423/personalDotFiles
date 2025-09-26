@@ -1,10 +1,10 @@
 {
-	"logo": {
-		"type": "kitty",
-			"source": "~/.config/fastfetch/logo/yoru-edited.jpg",
-		"height": 22,
-		"padding": {"left": 1, "right": 1},
-		},
+	// "logo": {
+	// 	"type": "kitty",
+	// 		"source": "~/.config/fastfetch/logo/archlinuxlogo.png",
+	// 	"height": 22,
+	// 	"padding": {"left": 1, "right": 1},
+	// 	},
 
 	"modules": [
 		{

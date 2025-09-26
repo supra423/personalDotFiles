@@ -4,6 +4,7 @@
 	font-size: 12px;
 }
 
+
 window#waybar {
 	background-color: rgba(0, 0, 0, 0);
 	/* border-bottom: 3px solid rgba(100, 114, 125, 0.3); */
@@ -11,6 +12,20 @@ window#waybar {
 	transition-property: background-color;
 	transition-duration: 0.5s;
 	border-radius: 20px;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+	border-radius: 20px;
+	background-color: rgba(30, 70, 100, 1.0);
+	color: #ffffff;
+	border-radius: 20px;
+	margin-top: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+	border: 2px outset rgba(45, 220, 245, 1.0)
 }
 
 window#waybar.hidden {
@@ -72,7 +87,7 @@ button:hover {
 #network:hover {
 	background-color: rgba(145, 145, 145, 0.4);
 	border-radius: 20px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #battery:hover {
@@ -130,7 +145,7 @@ button:hover {
 }
 
 #clock {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	border-radius: 20px;
 	font-family: 'DepartureMono Nerd Font';
 	font-size: 14px;
@@ -139,12 +154,12 @@ button:hover {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #battery {
 	padding-right: 17px;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	color: #ffffff;
 	border-radius: 20px;
 	font-family: 'DepartureMono Nerd Font';
@@ -154,12 +169,12 @@ button:hover {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #battery.charging,
 #battery.plugged {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	color: #ffffff;
 	border-radius: 20px;
 	font-family: 'DepartureMono Nerd Font';
@@ -169,7 +184,7 @@ button:hover {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 @keyframes blink {
@@ -192,7 +207,7 @@ button:hover {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #power-profiles-daemon {
@@ -201,11 +216,11 @@ button:hover {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #power-profiles-daemon.performance {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	color: #ffffff;
 	border-radius: 15px;
 	margin-top: 5px;
@@ -215,7 +230,7 @@ button:hover {
 }
 
 #power-profiles-daemon.balanced {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	color: #ffffff;
 	border-radius: 15px;
 	margin-top: 5px;
@@ -225,7 +240,7 @@ button:hover {
 }
 
 #power-profiles-daemon.power-saver {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	color: #ffffff;
 	border-radius: 15px;
 	margin-top: 5px;
@@ -260,7 +275,7 @@ label:focus {
 /* } */
 
 #network {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	border-radius: 20px;
 	font-family: 'DepartureMono Nerd Font';
 	font-size: 12px;
@@ -269,7 +284,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #network.disconnected {
@@ -282,11 +297,11 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #pulseaudio {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	color: #ffffff;
 	border-radius: 20px;
 	font-family: 'DepartureMono Nerd Font';
@@ -296,7 +311,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #pulseaudio.muted {
@@ -307,7 +322,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #wireplumber {
@@ -323,7 +338,7 @@ label:focus {
 	/* background-color: #66cc99; */
 	/* color: #2a5c45; */
 	/* min-width: 100px; */
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	color: #ffffff;
 	border-radius: 20px;
 	font-family: 'DepartureMono Nerd Font';
@@ -333,12 +348,12 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #custom-media.custom-spotify {
 	/* background-color: #66cc99; */
-	/* background-color: rgba(0, 0, 0, 0.4); */
+	/* background-color: rgba(60, 90, 110, 1); */
 	/* color: #ffffff; */
 	/* border-radius: 20px; */
 	/* font-family: 'DepartureMono Nerd Font'; */
@@ -352,7 +367,7 @@ label:focus {
 
 #custom-media.custom-vlc {
 	/* background-color: #ffa000; */
-	/* background-color: rgba(0, 0, 0, 0.4); */
+	/* background-color: rgba(60, 90, 110, 1); */
 	/* color: #ffffff; */
 	/* border-radius: 20px; */
 	/* font-family: 'DepartureMono Nerd Font'; */
@@ -365,7 +380,7 @@ label:focus {
 }
 
 #temperature {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	border-radius: 20px;
 	font-family: 'DepartureMono Nerd Font';
 	font-size: 14px;
@@ -374,7 +389,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #temperature.critical {
@@ -390,13 +405,13 @@ label:focus {
 }
 
 #tray {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	border-radius: 20px;
 	margin-top: 5px;
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #tray>.passive {
@@ -405,7 +420,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #tray>.needs-attention {
@@ -415,7 +430,7 @@ label:focus {
 	margin-right: 10px;
 	margin-bottom: 5px;
 	margin-left: 10px;
-	border: 3px solid rgba(245, 45, 45, 0.4);
+
 }
 
 #idle_inhibitor {
@@ -430,7 +445,7 @@ label:focus {
 #mpd {
 	/* background-color: #66cc99; */
 	/* color: #ffffff; */
-	/* background-color: rgba(0, 0, 0, 0.4); */
+	/* background-color: rgba(60, 90, 110, 1); */
 	/* border-radius: 20px; */
 	/* font-family: 'DepartureMono Nerd Font'; */
 	/* font-size: 14px; */
@@ -444,7 +459,7 @@ label:focus {
 #mpd.disconnected {
 	/* background-color: #f53c3c; */
 	/* color: #ffffff; */
-	/* background-color: rgba(0, 0, 0, 0.4); */
+	/* background-color: rgba(60, 90, 110, 1); */
 	/* border-radius: 20px; */
 	/* font-family: 'DepartureMono Nerd Font'; */
 	/* font-size: 14px; */
@@ -457,7 +472,7 @@ label:focus {
 
 #mpd.stopped {
 	/* background-color: #90b1b1; */
-	/* background-color: rgba(0, 0, 0, 0.4); */
+	/* background-color: rgba(60, 90, 110, 1); */
 	/* color: #ffffff; */
 	/* border-radius: 20px; */
 	/* font-family: 'DepartureMono Nerd Font'; */
@@ -471,7 +486,7 @@ label:focus {
 
 #mpd.paused {
 	/* background-color: #51a37a; */
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	color: #ffffff;
 	border-radius: 20px;
 	font-family: 'DepartureMono Nerd Font';
@@ -495,7 +510,7 @@ label:focus {
 	/* padding: 0 0px; */
 	/* margin: 0 5px; */
 	/* min-width: 16px; */
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	color: #ffffff;
 	border-radius: 20px;
 	font-family: 'DepartureMono Nerd Font';
@@ -510,7 +525,7 @@ label:focus {
 #keyboard-state>label {
 	border-radius: 20px;
 	padding: 0 5px;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	color: #ffffff;
 	border-radius: 20px;
 	font-family: 'DepartureMono Nerd Font';
@@ -524,7 +539,7 @@ label:focus {
 
 #keyboard-state>label.locked {
 	border-radius: 20px;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(60, 90, 110, 1);
 	color: #ffffff;
 	border-radius: 20px;
 	font-family: 'DepartureMono Nerd Font';
